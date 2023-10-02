@@ -1,0 +1,13 @@
+<?php
+if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Firefox')) {
+?>
+<h3>str_contains() false döndürmemiş olmalı</h3>
+<p>Firefox kullanıldığı saptandı.</p>
+<?php
+} else {
+?>
+<h3>str_contains() false döndürmüş olmalı</h3>
+<p>Firefox kullanılmadığı saptandı.</p>
+<?php
+}
+?>
